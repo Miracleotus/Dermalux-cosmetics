@@ -1,67 +1,39 @@
-"use client";
+import { Metadata } from "next";
 
-import { motion } from "framer-motion";
+export const metadata: Metadata = {
+  title: "Shipping Policy | PluginHive Co",
+  description: "Information regarding the delivery of digital products purchased from PluginHive Co.",
+};
 
-export default function ContactPage() {
+export default function ShippingPolicyPage() {
   return (
-    <main className="bg-brand-dark text-white min-h-screen pt-32 pb-24 px-6 font-body">
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-2xl mx-auto"
-      >
-        <h1 className="font-display text-5xl font-bold mb-6">
-          We'd Love to Hear From You
+    <main className="bg-brand-dark text-white font-body min-h-screen py-24 px-6">
+      <div className="max-w-4xl mx-auto space-y-12">
+        <h1 className="font-display text-4xl md:text-5xl font-bold text-center mb-12 text-brand-teal">
+          Shipping Policy
         </h1>
-        <p className="text-brand-gray mb-10 leading-relaxed">
-          Have a question about a product, your order, or just need some styling advice? The Calvexa customer care team is always here to help. Reach out to us through any of the channels below, and we will get back to you as soon as possible.
-        </p>
 
-        <h2 className="font-display text-2xl font-bold mb-6">Send us a message:</h2>
-        <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-          <input
-            type="text"
-            name="name"
-            aria-label="Name"
-            placeholder="Name"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors rounded-lg"
-          />
-          <input
-            type="email"
-            name="email"
-            aria-label="Email"
-            placeholder="Email"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors rounded-lg"
-          />
-          <input
-            type="text"
-            name="subject"
-            aria-label="Subject"
-            placeholder="Subject"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors rounded-lg"
-          />
-          <textarea
-            name="message"
-            aria-label="Message"
-            rows={5}
-            placeholder="Message"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors resize-none rounded-lg"
-          />
-          <button
-            type="submit"
-            className="w-full bg-brand-teal text-brand-dark py-4 font-bold uppercase tracking-widest hover:bg-brand-teal-light transition-colors rounded-lg"
-          >
-            Submit
-          </button>
-        </form>
+        <section className="space-y-4">
+          <h2 className="font-display text-2xl font-bold">1. Digital Delivery</h2>
+          <p className="text-brand-gray text-lg leading-relaxed">
+            PluginHive Co specializes exclusively in digital software (WordPress themes and plugins). We do not sell physical goods. Therefore, no physical shipping is required or provided.
+          </p>
+        </section>
 
-        <div className="mt-12 space-y-3 text-brand-gray text-sm">
-          <p><strong>Email:</strong> support@calvexa.com</p>
-          <p><strong>Phone:</strong> 1-800-CALVEXA (1-800-225-8392)</p>
-          <p><strong>Business Hours:</strong> Monday – Friday, 9:00 AM – 6:00 PM (EST)</p>
-        </div>
-      </motion.div>
+        <section className="space-y-4">
+          <h2 className="font-display text-2xl font-bold">2. Instant Access</h2>
+          <p className="text-brand-gray text-lg leading-relaxed">
+            Immediately upon successful payment verification, you will be redirected to a confirmation page containing download links for your purchased zip files and your software license keys.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="font-display text-2xl font-bold">3. Email Confirmation</h2>
+          <p className="text-brand-gray text-lg leading-relaxed">
+            Simultaneously, an automated email containing your invoice, download links, and license keys will be sent to the email address provided during checkout. You can also access your downloads at any time by logging into your PluginHive Co account dashboard.
+          </p>
+        </section>
+      </div>
     </main>
   );
 }

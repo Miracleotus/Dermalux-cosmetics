@@ -1,38 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ChefHat, Sofa, Bed } from "lucide-react";
+import { ArrowRight, LayoutTemplate, ShoppingCart, Zap } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
 const categories = [
   {
-    icon: <ChefHat size={28} />,
-    title: "Kitchenware",
-    desc: "Cook and dine with elegance.",
+    icon: <LayoutTemplate size={28} />,
+    title: "Premium Themes",
+    desc: "Responsive, beautifully designed templates for any niche.",
   },
   {
-    icon: <Sofa size={28} />,
-    title: "Living Room & Decor",
-    desc: "Add character and cozy comforts.",
+    icon: <ShoppingCart size={28} />,
+    title: "E-Commerce Plugins",
+    desc: "Powerful extensions to scale your WooCommerce store.",
   },
   {
-    icon: <Bed size={28} />,
-    title: "Bed & Bath",
-    desc: "Transform your private spaces into luxurious sanctuaries.",
+    icon: <Zap size={28} />,
+    title: "Performance Tools",
+    desc: "Caching and SEO utilities to keep your site blazing fast.",
   },
 ];
 
 const whyChooseUs = [
-  { title: "Premium Quality", desc: "We source only the finest, most durable materials for products built to last." },
-  { title: "Modern Design", desc: "Thoughtfully designed pieces that elevate your interior styling." },
-  { title: "Exceptional Value", desc: "Luxury living essentials without the luxury markup." },
+  { title: "Quality Over Quantity", desc: "Every theme and plugin undergoes rigorous testing for compatibility, security, and speed." },
+  { title: "Extensive Documentation", desc: "Clear, step-by-step guides and documentation to help you get started quickly." },
+  { title: "Priority Support", desc: "Your purchase comes with regular updates and priority customer support when you need it." },
 ];
 
 const process = [
-  { step: "1", title: "Browse & Inspire", desc: "Explore our curated collections to find the perfect pieces for your aesthetic." },
-  { step: "2", title: "Secure Checkout", desc: "Order with confidence using our safe, encrypted payment portal." },
-  { step: "3", title: "Fast Delivery", desc: "We pack your items with care and ship them swiftly to your doorstep." },
-  { step: "4", title: "Enjoy Your Space", desc: "Unbox, decorate, and fall in love with your newly refreshed home." },
+  { step: "1", title: "Choose Your Solution", desc: "Browse our library and find the perfect theme or plugin for your project." },
+  { step: "2", title: "Instant Download", desc: "Complete your secure purchase and download your zip files immediately." },
+  { step: "3", title: "Install & Create", desc: "Upload to your WordPress dashboard, follow our quick-start guides, and launch your site faster than ever." },
 ];
 
 const fadeInUp: Variants = {
@@ -66,7 +65,7 @@ export default function HomePage() {
     <main className="bg-brand-dark text-white font-body">
 
       {/* HERO */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 relative overflow-hidden">
+      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24 text-center">
         <div className="absolute inset-0 pointer-events-none"
           style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(201, 169, 97, 0.12) 0%, transparent 70%)" }} />
         <motion.div
@@ -76,16 +75,16 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center"
         >
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl">
-            Elevate Your Everyday Living.
+            Build Better Websites, Faster.
           </h1>
           <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Discover beautifully crafted, functional household items designed to turn your house into a home you love.
+            Welcome to PluginHive Co. Discover premium, clean-coded WordPress themes and powerful plugins designed to elevate your web projects. Whether you&apos;re an agency, freelancer, or store owner, we have the tools you need to succeed.
           </p>
           <Link
             href="/shop"
             className="bg-brand-teal text-brand-dark px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-teal-light transition-all inline-flex items-center gap-2 rounded-full"
           >
-            Shop the Collection <ArrowRight size={16} />
+            Explore Our Catalog <ArrowRight size={16} />
           </Link>
         </motion.div>
       </section>
@@ -99,10 +98,10 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Welcome to Calvexa Home Living
+          Crafted for Performance and Scale.
         </h2>
         <p className="text-brand-gray text-lg leading-relaxed">
-          We believe that the environment you live in shapes the way you feel. That is why Calvexa is dedicated to curating premium household items that blend modern aesthetics with everyday practicality. From the kitchen where you create memories to the bedroom where you recharge, we bring warmth, style, and quality to every corner of your home.
+          We are a team of passionate developers and designers dedicated to building digital products that just work. At PluginHive Co, we believe that setting up a stunning, high-converting website shouldn&apos;t require compromising on speed or security. Our code is lightweight, our designs are modern, and our support is unmatched.
         </p>
       </motion.section>
 
@@ -116,10 +115,10 @@ export default function HomePage() {
             variants={fadeInUp}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-              Explore Your Home's Potential
+              Everything You Need to Grow
             </h2>
             <p className="text-brand-gray text-center mb-16 text-lg">
-              Find exactly what you need to refresh your space.
+              Browse our core categories tailored to modern web creators:
             </p>
           </motion.div>
           <motion.div 
@@ -155,8 +154,11 @@ export default function HomePage() {
           variants={fadeInUp}
           className="font-display text-4xl font-bold text-center mb-16"
         >
-          The <span className="text-brand-teal">Calvexa Standard</span>
+          The <span className="text-brand-teal">PluginHive Advantage</span>
         </motion.h2>
+        <p className="text-brand-gray text-center max-w-2xl mx-auto mb-16 text-lg">
+          Why do thousands of developers trust our products? Because we prioritize quality over quantity. Every theme and plugin undergoes rigorous testing for compatibility, security, and speed. Plus, your purchase comes with extensive documentation, regular updates, and priority customer support.
+        </p>
         <motion.div 
           variants={staggerContainer}
           initial="initial"
@@ -183,7 +185,7 @@ export default function HomePage() {
             variants={fadeInUp}
             className="font-display text-4xl font-bold text-center mb-16"
           >
-            How Calvexa Works
+            From Download to Launch in Minutes
           </motion.h2>
           <motion.div 
             variants={staggerContainer}
@@ -216,16 +218,16 @@ export default function HomePage() {
         className="py-32 px-6 text-center"
       >
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-          Ready to Refresh Your Space?
+          Ready to Upgrade Your Website?
         </h2>
         <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Join thousands of happy homeowners who have transformed their spaces with Calvexa.
+          Join a growing community of web professionals building better digital experiences with PluginHive Co.
         </p>
         <Link
           href="/shop"
           className="bg-brand-teal text-brand-dark px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-brand-teal-light transition-all inline-block rounded-full"
         >
-          View Best Sellers
+          Shop All Products
         </Link>
       </motion.section>
 

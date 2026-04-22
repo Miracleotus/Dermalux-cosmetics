@@ -17,8 +17,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Calvexa Home Living | Premium Household Essentials",
-  description: "Discover beautifully crafted, functional household items designed to turn your house into a home you love.",
+  title: "PluginHive Co | Build Better Websites, Faster.",
+  description: "Discover premium, clean-coded WordPress themes and powerful plugins designed to elevate your web projects.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
-      <body className="bg-brand-dark text-white antialiased">
+      <body className="bg-brand-dark text-white antialiased" suppressHydrationWarning>
         <CartProvider>
           <Navbar />
           {children}
