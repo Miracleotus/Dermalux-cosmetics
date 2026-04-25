@@ -18,7 +18,7 @@ export default function ProductPage() {
       <main className="max-w-4xl mx-auto px-4 py-12">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Product Not Found</h1>
-          <p className="text-white/60 mb-8">The product you're looking for doesn't exist.</p>
+          <p className="text-white/60 mb-8">The product you`re looking for doesn`t exist.</p>
           <Link
             href="/shop"
             className="bg-brand-teal text-brand-dark px-6 py-3 font-semibold rounded-full hover:bg-brand-teal-light transition"
@@ -32,6 +32,7 @@ export default function ProductPage() {
 
   const handleAddToCart = () => {
     addToCart(product);
+    alert(`${product.name} has been added to your cart!`);
   };
 
   return (

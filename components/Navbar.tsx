@@ -25,14 +25,14 @@ export default function Navbar() {
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image 
-            src="/logo.png" 
-            alt="PluginHive Co Logo" 
+            src="/dermalux.png" 
+            alt="Dermalux Cosmetics Logo" 
             width={40} 
             height={40} 
             className="group-hover:scale-105 transition-transform object-contain" 
           />
           <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-teal to-brand-teal/80 bg-clip-text text-transparent">
-            PLUGINHIVE CO
+            DERMALUX COSMETICS
           </span>
         </Link>
 

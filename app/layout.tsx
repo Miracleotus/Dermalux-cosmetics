@@ -17,8 +17,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "PluginHive Co | Build Better Websites, Faster.",
-  description: "Discover premium, clean-coded WordPress themes and powerful plugins designed to elevate your web projects.",
+  title: "Dermalux Cosmetics | Reveal Your Most Radiant Self.",
+  description: "Discover luxurious, science-backed skincare and cosmetics designed to nourish your skin and elevate your natural beauty.",
 };
 
 export default function RootLayout({

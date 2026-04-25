@@ -1,37 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, LayoutTemplate, ShoppingCart, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, Droplet, Package } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
 const categories = [
   {
-    icon: <LayoutTemplate size={28} />,
-    title: "Premium Themes",
-    desc: "Responsive, beautifully designed templates for any niche.",
+    icon: <Sparkles size={28} />,
+    title: "Skincare",
+    desc: "Serums, moisturizers, and cleansers that bring out your inner glow.",
   },
   {
-    icon: <ShoppingCart size={28} />,
-    title: "E-Commerce Plugins",
-    desc: "Powerful extensions to scale your WooCommerce store.",
+    icon: <Droplet size={28} />,
+    title: "Makeup",
+    desc: "Pigment-rich, skin-loving cosmetics for flawless wear.",
   },
   {
-    icon: <Zap size={28} />,
-    title: "Performance Tools",
-    desc: "Caching and SEO utilities to keep your site blazing fast.",
+    icon: <Package size={28} />,
+    title: "Bundles",
+    desc: "Curated kits to simplify your daily regimen.",
   },
 ];
 
 const whyChooseUs = [
-  { title: "Quality Over Quantity", desc: "Every theme and plugin undergoes rigorous testing for compatibility, security, and speed." },
-  { title: "Extensive Documentation", desc: "Clear, step-by-step guides and documentation to help you get started quickly." },
-  { title: "Priority Support", desc: "Your purchase comes with regular updates and priority customer support when you need it." },
+  { title: "Clean Ingredients", desc: "Free from parabens, sulfates, and synthetic fragrances." },
+  { title: "Cruelty-Free", desc: "Proudly leaping bunny certified. We never test on animals." },
+  { title: "Dermatologist Tested", desc: "Formulated for efficacy and safe for sensitive skin types." },
 ];
 
 const process = [
-  { step: "1", title: "Choose Your Solution", desc: "Browse our library and find the perfect theme or plugin for your project." },
-  { step: "2", title: "Instant Download", desc: "Complete your secure purchase and download your zip files immediately." },
-  { step: "3", title: "Install & Create", desc: "Upload to your WordPress dashboard, follow our quick-start guides, and launch your site faster than ever." },
+  { step: "1", title: "Cleanse & Prep", desc: "Wash away impurities with our Oat Cleanser and balance with our Rose Toner." },
+  { step: "2", title: "Treat & Hydrate", desc: "Target concerns with our Vitamin C Serum and lock it in with the Silk Cloud Moisturizer." },
+  { step: "3", title: "Enhance", desc: "Finish with our protective SPF and a touch of our Dew Drops Liquid Blush." },
 ];
 
 const fadeInUp: Variants = {
@@ -75,16 +75,16 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center"
         >
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl">
-            Build Better Websites, Faster.
+            Reveal Your Most Radiant Self.
           </h1>
           <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Welcome to PluginHive Co. Discover premium, clean-coded WordPress themes and powerful plugins designed to elevate your web projects. Whether you&apos;re an agency, freelancer, or store owner, we have the tools you need to succeed.
+            Discover luxurious, science-backed skincare and cosmetics designed to nourish your skin and elevate your natural beauty.
           </p>
           <Link
             href="/shop"
             className="bg-brand-teal text-brand-dark px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-teal-light transition-all inline-flex items-center gap-2 rounded-full"
           >
-            Explore Our Catalog <ArrowRight size={16} />
+            Shop the Collection <ArrowRight size={16} />
           </Link>
         </motion.div>
       </section>
@@ -98,10 +98,10 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Crafted for Performance and Scale.
+          Beauty That Cares For You
         </h2>
         <p className="text-brand-gray text-lg leading-relaxed">
-          We are a team of passionate developers and designers dedicated to building digital products that just work. At PluginHive Co, we believe that setting up a stunning, high-converting website shouldn&apos;t require compromising on speed or security. Our code is lightweight, our designs are modern, and our support is unmatched.
+          At Dermalux Cosmetics, we believe that makeup and skincare should work in harmony. Born from a desire to create high-performance products without harsh chemicals, our collections are meticulously crafted using nourishing, cruelty-free ingredients. We aren`t just covering up flaws; we`re celebrating and protecting the skin you`re in.
         </p>
       </motion.section>
 
@@ -115,10 +115,10 @@ export default function HomePage() {
             variants={fadeInUp}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-              Everything You Need to Grow
+              Explore Dermalux
             </h2>
             <p className="text-brand-gray text-center mb-16 text-lg">
-              Browse our core categories tailored to modern web creators:
+              Whether you are building a foundational skincare routine or looking for the perfect everyday makeup look, we have you covered.
             </p>
           </motion.div>
           <motion.div 
@@ -154,10 +154,10 @@ export default function HomePage() {
           variants={fadeInUp}
           className="font-display text-4xl font-bold text-center mb-16"
         >
-          The <span className="text-brand-teal">PluginHive Advantage</span>
+          The <span className="text-brand-teal">Dermalux Difference</span>
         </motion.h2>
         <p className="text-brand-gray text-center max-w-2xl mx-auto mb-16 text-lg">
-          Why do thousands of developers trust our products? Because we prioritize quality over quantity. Every theme and plugin undergoes rigorous testing for compatibility, security, and speed. Plus, your purchase comes with extensive documentation, regular updates, and priority customer support.
+          We hold ourselves to the highest standards because your skin deserves nothing less.
         </p>
         <motion.div 
           variants={staggerContainer}
@@ -185,8 +185,11 @@ export default function HomePage() {
             variants={fadeInUp}
             className="font-display text-4xl font-bold text-center mb-16"
           >
-            From Download to Launch in Minutes
+            Your 3-Step Path to Glowing Skin
           </motion.h2>
+          <p className="text-brand-gray text-center max-w-2xl mx-auto mb-16 text-lg">
+            Great skin doesn`t have to be complicated. Follow our signature three-step method for a flawless canvas.
+          </p>
           <motion.div 
             variants={staggerContainer}
             initial="initial"
@@ -218,16 +221,16 @@ export default function HomePage() {
         className="py-32 px-6 text-center"
       >
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-          Ready to Upgrade Your Website?
+          Ready to Upgrade Your Beauty Routine?
         </h2>
         <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Join a growing community of web professionals building better digital experiences with PluginHive Co.
+          Join the Dermalux family today and get 15% off your first order when you sign up for our newsletter.
         </p>
         <Link
           href="/shop"
           className="bg-brand-teal text-brand-dark px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-brand-teal-light transition-all inline-block rounded-full"
         >
-          Shop All Products
+          Claim Your Discount
         </Link>
       </motion.section>
 
