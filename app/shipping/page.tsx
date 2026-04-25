@@ -16,21 +16,21 @@ export default function RefundPage() {
         </h1>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">1. Returns</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-pink">1. Returns</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
             We want you to love your Dermalux Cosmetics! We offer a 30-day return policy. If 30 days have passed since your purchase, unfortunately, we cannot offer you a refund or exchange. To be eligible for a return, your item must be gently used (less than 20% consumed) or unused, and in the same condition that you received it.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">2. Refunds</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-pink">2. Refunds</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
             Once your return is received and inspected, we will send you an email to notify you that we have received your returned item. If approved, your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment within 5-7 business days.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">3. Non-returnable Items</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-pink">3. Non-returnable Items</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
             Gift cards and certain promotional sale items are final sale and cannot be returned.
           </p>

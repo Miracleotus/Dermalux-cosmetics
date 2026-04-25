@@ -31,7 +31,7 @@ export default function Navbar() {
             height={40} 
             className="group-hover:scale-105 transition-transform object-contain" 
           />
-          <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-teal to-brand-teal/80 bg-clip-text text-transparent">
+          <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-pink to-brand-pink/80 bg-clip-text text-transparent">
             DERMALUX COSMETICS
           </span>
         </Link>
@@ -42,17 +42,17 @@ export default function Navbar() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-brand-gray hover:text-brand-teal transition-colors font-body text-sm tracking-widest uppercase"
+              className="text-brand-gray hover:text-brand-pink transition-colors font-body text-sm tracking-widest uppercase"
             >
               {l.label}
             </Link>
           ))}
 
           {/* Cart Icon */}
-          <Link href="/cart" className="relative text-brand-gray hover:text-brand-teal transition-colors">
+          <Link href="/cart" className="relative text-brand-gray hover:text-brand-pink transition-colors">
             <ShoppingCart size={22} />
             {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 bg-brand-teal text-brand-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+              <span className="absolute -top-2 -right-2 bg-brand-pink text-brand-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
                 {totalItems}
               </span>
             )}
@@ -60,7 +60,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className="bg-brand-teal text-brand-dark px-6 py-2.5 text-sm font-bold tracking-widest uppercase hover:bg-brand-teal-light transition-colors rounded-full"
+            className="bg-brand-pink text-brand-dark px-6 py-2.5 text-sm font-bold tracking-widest uppercase hover:bg-brand-pink-light transition-colors rounded-full"
           >
             Get in Touch
           </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
           <Link href="/cart" className="relative text-brand-gray">
             <ShoppingCart size={22} />
             {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 bg-brand-teal text-brand-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+              <span className="absolute -top-2 -right-2 bg-brand-pink text-brand-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
                 {totalItems}
               </span>
             )}
@@ -102,7 +102,7 @@ export default function Navbar() {
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="text-brand-gray hover:text-brand-teal transition-colors uppercase tracking-widest text-sm"
+                  className="text-brand-gray hover:text-brand-pink transition-colors uppercase tracking-widest text-sm"
                 >
                   {l.label}
                 </Link>

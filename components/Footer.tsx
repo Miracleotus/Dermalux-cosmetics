@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-navy/20 border-t border-white/10 pt-16 pb-8 px-6 mt-12 font-body">
+    <footer className="bg-brand-plum/20 border-t border-white/10 pt-16 pb-8 px-6 mt-12 font-body">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         
         {/* Brand Section */}
@@ -16,7 +16,7 @@ export default function Footer() {
               height={32} 
               className="group-hover:scale-105 transition-transform object-contain" 
             />
-            <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-teal to-brand-teal/80 bg-clip-text text-transparent">
+            <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-pink to-brand-pink/80 bg-clip-text text-transparent">
               DERMALUX COSMETICS
             </span>
           </Link>
@@ -29,9 +29,9 @@ export default function Footer() {
         <div>
           <h3 className="font-display font-bold text-lg mb-6 text-white tracking-wide">Explore</h3>
           <ul className="space-y-4">
-            <li><Link href="/shop" className="text-brand-gray hover:text-brand-teal transition-colors text-sm">Shop Collection</Link></li>
-            <li><Link href="/about" className="text-brand-gray hover:text-brand-teal transition-colors text-sm">Our Story</Link></li>
-            <li><Link href="/contact" className="text-brand-gray hover:text-brand-teal transition-colors text-sm">Contact Us</Link></li>
+            <li><Link href="/shop" className="text-brand-gray hover:text-brand-pink transition-colors text-sm">Shop Collection</Link></li>
+            <li><Link href="/about" className="text-brand-gray hover:text-brand-pink transition-colors text-sm">Our Story</Link></li>
+            <li><Link href="/contact" className="text-brand-gray hover:text-brand-pink transition-colors text-sm">Contact Us</Link></li>
           </ul>
         </div>
 
@@ -39,9 +39,9 @@ export default function Footer() {
         <div>
           <h3 className="font-display font-bold text-lg mb-6 text-white tracking-wide">Legal</h3>
           <ul className="space-y-4">
-            <li><Link href="/shipping" className="text-brand-gray hover:text-brand-teal transition-colors text-sm">Shipping & Refunds</Link></li>
-            <li><Link href="/terms" className="text-brand-gray hover:text-brand-teal transition-colors text-sm">Terms & Conditions</Link></li>
-            <li><Link href="/privacy-policy" className="text-brand-gray hover:text-brand-teal transition-colors text-sm">Privacy Policy</Link></li>
+            <li><Link href="/shipping" className="text-brand-gray hover:text-brand-pink transition-colors text-sm">Shipping & Refunds</Link></li>
+            <li><Link href="/terms" className="text-brand-gray hover:text-brand-pink transition-colors text-sm">Terms & Conditions</Link></li>
+            <li><Link href="/privacy-policy" className="text-brand-gray hover:text-brand-pink transition-colors text-sm">Privacy Policy</Link></li>
           </ul>
         </div>
       </div>

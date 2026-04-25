@@ -67,7 +67,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24 text-center">
         <div className="absolute inset-0 pointer-events-none"
-          style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(201, 169, 97, 0.12) 0%, transparent 70%)" }} />
+          style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(229, 169, 169, 0.15) 0%, transparent 70%)" }} />
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -82,7 +82,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/shop"
-            className="bg-brand-teal text-brand-dark px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-teal-light transition-all inline-flex items-center gap-2 rounded-full"
+            className="bg-brand-pink text-brand-dark px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-pink-light transition-all inline-flex items-center gap-2 rounded-full"
           >
             Shop the Collection <ArrowRight size={16} />
           </Link>
@@ -106,7 +106,7 @@ export default function HomePage() {
       </motion.section>
 
       {/* CATEGORIES */}
-      <section className="bg-brand-navy/30 py-24 px-6">
+      <section className="bg-brand-plum/30 py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
             initial="initial"
@@ -132,9 +132,9 @@ export default function HomePage() {
               <motion.div
                 variants={staggerItem}
                 key={c.title}
-                className="border border-white/10 p-6 hover:border-brand-teal/50 transition-all group rounded-2xl bg-white/2 hover:bg-white/5"
+                className="border border-white/10 p-6 hover:border-brand-pink/50 transition-all group rounded-2xl bg-white/2 hover:bg-white/5"
               >
-                <div className="text-brand-teal mb-4 group-hover:scale-110 transition-transform">
+                <div className="text-brand-pink mb-4 group-hover:scale-110 transition-transform">
                   {c.icon}
                 </div>
                 <h3 className="font-display text-xl font-bold mb-3">{c.title}</h3>
@@ -154,7 +154,7 @@ export default function HomePage() {
           variants={fadeInUp}
           className="font-display text-4xl font-bold text-center mb-16"
         >
-          The <span className="text-brand-teal">Dermalux Difference</span>
+          The <span className="text-brand-pink">Dermalux Difference</span>
         </motion.h2>
         <p className="text-brand-gray text-center max-w-2xl mx-auto mb-16 text-lg">
           We hold ourselves to the highest standards because your skin deserves nothing less.
@@ -176,7 +176,7 @@ export default function HomePage() {
       </section>
 
       {/* PROCESS */}
-      <section className="bg-brand-navy/30 py-24 px-6">
+      <section className="bg-brand-plum/30 py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             initial="initial"
@@ -199,7 +199,7 @@ export default function HomePage() {
           >
             {process.map((p) => (
               <motion.div variants={staggerItem} key={p.step} className="flex gap-8 items-start border-b border-white/10 pb-8">
-                <span className="font-display text-5xl font-bold text-brand-teal/40 shrink-0">
+                <span className="font-display text-5xl font-bold text-brand-pink/40 shrink-0">
                   {p.step}
                 </span>
                 <div>
@@ -228,7 +228,7 @@ export default function HomePage() {
         </p>
         <Link
           href="/shop"
-          className="bg-brand-teal text-brand-dark px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-brand-teal-light transition-all inline-block rounded-full"
+          className="bg-brand-pink text-brand-dark px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-brand-pink-light transition-all inline-block rounded-full"
         >
           Claim Your Discount
         </Link>

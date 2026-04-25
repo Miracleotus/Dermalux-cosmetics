@@ -4,11 +4,11 @@
   --font-display: var(--font-playfair), "Playfair Display", "Georgia", serif;
   --font-body: var(--font-dm-sans), "DM Sans", "Inter", sans-serif;
 
-  --color-brand-dark: #0f172a;
-  --color-brand-teal: #14b8a6;
-  --color-brand-teal-light: #5eead4;
-  --color-brand-navy: #1e293b;
-  --color-brand-gray: #94a3b8;
+  --color-brand-dark: #261E1E;
+  --color-brand-pink: #E5A9A9;
+  --color-brand-pink-light: #F4C4C4;
+  --color-brand-plum: #3B2C2C;
+  --color-brand-gray: #D9D2D2;
 }
 
 html {
